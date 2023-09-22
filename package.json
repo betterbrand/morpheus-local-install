@@ -1,5 +1,5 @@
 {
-  "name": "electron-quick-start",
+  "name": "Morpheus",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
@@ -14,9 +14,15 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "Morpheus",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^26.2.0"
+  },
+  "dependencies": {
+    "flowise": "^1.3.6",
+    "flowise-embed": "^1.0.12",
+    "flowise-embed-custom": "^1.0.10",
+    "flowise-ui": "^1.3.4"
   }
 }
