@@ -3,53 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">-->
+
+
+
     <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
+    <title>Morpheus</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
+    <h1>Morpheus</h1>
     <flowise-fullchatbot></flowise-fullchatbot>
-<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/gh/betterbrand/Flow-chat-embed@latest/dist/web.js"
-    Chatbot.initFull({
-        chatflowid: "ece63570-5832-46e4-80ff-60ace9302df7",
-        apiHost: "https://agent-uno.onrender.com",
-        theme: {
-            chatWindow: {
-                welcomeMessage: "Hello! I'm Agent Uno.  Can I help you with your Unocoin registration?",
-                backgroundColor: "#ffffff",
-                
-//height: 700,
-//                width: 400,
-                fontSize: 16,
-                poweredByTextColor: "#303235",
-                botMessage: {
-                    backgroundColor: "#f7f8ff",
-                    textColor: "#303235",
-                    showAvatar: true,
-                    avatarSrc: "//34adfc03bb03cff2d0c4557b4559ddfd.cdn.bubble.io/f1695315904578x818926616249060100/circle%20group.webp",
-                },
-                userMessage: {
-                    backgroundColor: "#3B81F6",
-                    textColor: "#ffffff",
-                    showAvatar: true,
-                    avatarSrc: "//34adfc03bb03cff2d0c4557b4559ddfd.cdn.bubble.io/f1695309180083x781022985224165500/noun-happy-penguin-user-4376649.png",
-                },
-                textInput: {
-                    placeholder: "What's your question",
-                    backgroundColor: "#ffffff",
-                    textColor: "#303235",
-                    sendButtonColor: "#3B81F6",
-                }
-            }
-        }
-    })
-</script>
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.initFull({
+            chatflowid: "7e8c3762-54a5-48f5-8143-0067ab957113",
+            apiHost: "http://localhost:3000",
+        })
+    </script>
+    
+
+    
+    <!--
+        <script src="./chatty.js"></script>
+    -->
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
