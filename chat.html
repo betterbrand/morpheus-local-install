@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<!--    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    -->
+    <title>Morpheus</title>
+  </head>
+  <body>
+    <flowise-fullchatbot></flowise-fullchatbot>
+    <script type="module">
+      import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+      Chatbot.initFull({
+        chatflowid: "7e8c3762-54a5-48f5-8143-0067ab957113",
+        apiHost: "http://localhost:3000",
+      })
+    </script>
+  </body>
+  <script src="./renderer.js"></script>
